@@ -146,7 +146,7 @@ extension CalendarView : JTAppleCalendarViewDataSource
 {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters
     {
-       let today = Date()
+        let today = Date()
         let oneYearPreviousDate = Calendar.current.date(byAdding: .year, value: -1, to: today)
         let oneYearLaterDate = Calendar.current.date(byAdding: .year, value: 1, to: today)
         

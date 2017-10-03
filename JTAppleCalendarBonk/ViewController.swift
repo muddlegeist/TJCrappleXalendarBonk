@@ -7,19 +7,20 @@
 //
 
 import UIKit
+import EasyPeasy
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    var calendarView = CalendarView()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.addSubview(self.calendarView)
+        self.calendarView <- [Top(100.0),Left(0.0),Right(0.0),Height(220.0)]
+        
+        self.calendarView.jumpTo(date: Date())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

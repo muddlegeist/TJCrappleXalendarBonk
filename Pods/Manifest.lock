@@ -1,0 +1,15 @@
+PODS:
+  - EasyPeasy (1.5.0)
+  - JTAppleCalendar (7.0.6)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - JTAppleCalendar
+
+SPEC CHECKSUMS:
+  EasyPeasy: 657ea5a046311f2e16f43779aa47a24ff02b55fb
+  JTAppleCalendar: 6a942475e33b9ad4dee0a0e14aa4c63adcf4f543
+
+PODFILE CHECKSUM: 1d60318f3a261a757e508fac7e033248d0996240
+
+COCOAPODS: 1.1.1

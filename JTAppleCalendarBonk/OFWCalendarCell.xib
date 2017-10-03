@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier=" CalendarCell" id="AJ2-kP-FZn" customClass="OFWCalendarCell" customModule="JTAppleCalendarBonk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLv-h3-e1p" userLabel="Selected View">
+                    <rect key="frame" x="0.0" y="0.0" width="195" height="156"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYx-eU-qV1">
+                    <rect key="frame" x="0.0" y="0.0" width="195" height="156"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XLv-h3-e1p" firstAttribute="leading" secondItem="AJ2-kP-FZn" secondAttribute="leading" id="0Oh-AW-aFf"/>
+                <constraint firstAttribute="trailing" secondItem="XLv-h3-e1p" secondAttribute="trailing" id="Fhc-yj-7nC"/>
+                <constraint firstItem="XLv-h3-e1p" firstAttribute="top" secondItem="AJ2-kP-FZn" secondAttribute="top" id="WSR-BO-Dy9"/>
+                <constraint firstItem="nYx-eU-qV1" firstAttribute="top" secondItem="AJ2-kP-FZn" secondAttribute="top" id="ZHe-fW-CUB"/>
+                <constraint firstItem="nYx-eU-qV1" firstAttribute="leading" secondItem="AJ2-kP-FZn" secondAttribute="leading" id="ZNh-pn-Q3m"/>
+                <constraint firstAttribute="bottom" secondItem="nYx-eU-qV1" secondAttribute="bottom" id="dqg-S4-Bvp"/>
+                <constraint firstAttribute="bottom" secondItem="XLv-h3-e1p" secondAttribute="bottom" id="u5D-XL-NQa"/>
+                <constraint firstAttribute="trailing" secondItem="nYx-eU-qV1" secondAttribute="trailing" id="zIJ-IS-Pfl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayLabel" destination="nYx-eU-qV1" id="arm-Nj-9pM"/>
+                <outlet property="selectedView" destination="XLv-h3-e1p" id="SSB-zQ-czc"/>
+            </connections>
+            <point key="canvasLocation" x="-235.5" y="-107"/>
+        </view>
+    </objects>
+</document>

@@ -57,6 +57,7 @@ class CalendarView: UIView
         self.jtCalendarView.showsHorizontalScrollIndicator = false
         self.jtCalendarView.showsVerticalScrollIndicator = false
         self.jtCalendarView.register( UINib(nibName: "OFWCalendarCell", bundle: nil), forCellWithReuseIdentifier: "OFWCalendarCell")
+        self.jtCalendarView.scrollingMode = .stopAtEachCalendarFrameWidth
         self.jtCalendarView.allowsMultipleSelection  = true
         self.jtCalendarView.isRangeSelectionUsed = true
         self.jtCalendarView.minimumLineSpacing = 0.0
